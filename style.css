@@ -1,0 +1,32 @@
+body {
+    margin: 2em 2em;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: 90%;
+    max-width: 500px;
+    border: 5px solid black;
+}
+
+#grid-container > cell {
+    aspect-ratio: 1;
+    border: 1px solid black;
+}
+
+
+
+#change-size {
+    align-self: center;
+    margin: 25px;
+    padding: 10px;
+    border: 2px solid rgb(95, 190, 227);
+    border-radius: 5px;
+    background-color: rgb(214, 230, 237);
+    color: darkslategray;
+    font-weight: bolder;
+}
