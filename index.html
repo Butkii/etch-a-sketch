@@ -7,8 +7,20 @@
     <title>Etch-a-Sketch</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
 </head>
 <body>
-    <div id="grid-container"></div>
+    <h1>Etch-A-Sketch</h1>
+    <div id="game-window"> 
+        <div id="options">
+            <button class="mode" id="blackmode">Black & White</button>
+            <button class="mode" id="rainbowmode">Random Colors</button>
+            <button class="mode" id="erasemode">Erase</button>
+        </div>
+        <div id="grid-container"></div>
+        <div class="range-slider">
+            <input id="input-range" orient="vertical" type="range" step="1" value="16" min="1" max="100">
+        </div> 
+    </div>
 </body>
 </html>
